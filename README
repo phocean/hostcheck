@@ -1,0 +1,41 @@
+Hostcheck
+    version : 0.10 - date : 2008/09/01 - author : jc baptiste
+    <jc@phocean.net> - license : GNU/GPLv2
+
+  Description
+    Hostcheck is a simple script to check the availabily of hosts read from
+    a file. It can scan ICMP, UDP and TCP.
+
+    The host file must be formatted so that each line is like (without
+    quotes) :
+
+    "host:service1,service2,...,servicen"
+
+    Example :
+
+    "toto:ssh,http"
+
+    "titi.org:ssh"
+
+    "tata:"
+
+  Synopsis
+    hostcheck.pl [-utv] FILE
+
+    *   without option : simple ICMP ping scan. FILE must be a valid path to
+        a file containing the hosts to check.
+
+   Options
+    *   -v
+
+        verbose mode (display warnings, mostly about invalid entrie from the
+        file)
+
+    *   -u
+
+        process an UDP ping instead of ICMP
+
+    *   -t
+
+        process the TCP services checks (those present in the file)
+
