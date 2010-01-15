@@ -19,6 +19,13 @@ Hostcheck
 
     "tata:"
 
+  Prerequisites
+    Hostcheck is a Perl script based on the following modules : Getopt::Std,
+    Net::Ping, Time::HiRes, Term::ANSIColor and IO::Socket.
+
+    You can download these from CPAN or install them from you favorite Linux
+    distro.
+
   Synopsis
     hostcheck.pl [-utv] FILE
 
